@@ -12,14 +12,27 @@
     --mid-font: 2rem;
     --small-font: 1.35rem;
     --smaller-font: 0.8rem;
+    /* This is the light theme */
+    --body-color: rgb(255,255,255);
     --accent-black: rgb(23, 23, 23);
     --accent-yellow: rgb(235, 235, 42);
+    --accent-white: rgb(255,255,255);
     --text-white: rgb(255,255,255);
+    --text-black: rgb(0,0,0);
+    /* This is the dark theme
+    --accent-black: rgb(236, 209, 209);
+    --accent-yellow: rgb(52, 48, 48);
+    --accent-white: rgb(25, 25, 25);
+    --text-white: rgb(2, 2, 2);
+    --text-black: rgb(255, 255, 255);
+    --body-color: rgb(0, 0, 0); */
 }
 
 body {
    padding-inline: 100px;
    position: relative;
+   background-color: var(--body-color);
+   transition: all 0.4s ease;
 }
 
 .wrapper {
@@ -32,11 +45,14 @@ body {
 }
 
 .content-left, .content-right {
+    position: relative;
     display: flex;
     flex-direction: column;
+    background-color: var(--accent-white);
     /* border: 1px solid var(--accent-black); */
     padding: 75px 20px;
     height: 93dvh;
+    transition: all 0.4s ease;
 }
 
 .navbar {
@@ -52,16 +68,15 @@ body {
     background-color: var(--accent-black);
     color: var(--text-white);
     padding: 30px 20px;
-}
-
-.navbar-left {
-    font-family: var(--important-font);
+    transition: all 0.4s ease;
 }
 
 .navbar-right {
     display: flex;
     font-family: var(--lesser-font);
+    color: var(--text-white);
     gap: 3rem;
+    transition: all 0.4s ease;
 }
 
 .navbar-img {
@@ -74,6 +89,8 @@ body {
 
 .content-left {
     background-color: var(--accent-yellow);
+    color: var(--text-black);
+    transition: all 0.4s ease;
 }
 
 .content-left h1 {
@@ -103,6 +120,8 @@ body {
     font-family: var(--important-font);
     font-size: var(--big-less-font);
     text-decoration: underline;
+    color: var(--text-black);
+    transition: all 0.4s ease;
 }
 
 .content-right::-webkit-scrollbar {
@@ -118,11 +137,6 @@ body {
 .project-content {
     display: grid;
     grid-template-columns: 1fr 150px;
-    /* grid-template-areas: 
-    "header header img"
-    "text text img"
-    "pill pill pill";
-    grid-template-columns: 1fr, 1fr, 150px; */
 }
 
 .project-info {
@@ -133,17 +147,21 @@ body {
 .project-content h2 {
     font-family: var(--important-font);
     font-size: var(--mid-font);
+    color: var(--text-black);
     cursor: pointer;
     grid-area: header;
+    transition: all 0.4s ease;
 }
 
 .project-content p {
     font-family: var(--lesser-font);
+    color: var(--text-black);
     margin-bottom: 15px;
     padding-right: 15px;
     line-height: 25px;
     grid-area: text;
     text-align: justify;
+    transition: all 0.4s ease;
 }
 
 .project-content img {
@@ -168,12 +186,15 @@ body {
     color: var(--text-white);
     padding: 5px 20px;
     border-radius: 10px;
+    transition: all 0.4s ease;
 }
 
 .skills li {
     font-family: var(--lesser-font);
     font-size: var(--small-font);
+    color: var(--text-black);
     line-height: 60px;
+    transition: all 0.4s ease;
 }
 
 footer {
@@ -187,6 +208,18 @@ footer {
     text-align: center;
     background-color: var(--accent-black);
     color: var(--text-white);
+    transition: all 0.4s ease;
+}
+
+.theme-button {
+    background-color: var(--accent-white);
+    color: var(--text-black);
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 @media (width < 1360px) {
