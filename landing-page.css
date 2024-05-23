@@ -1,0 +1,239 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --important-font: "Mukta Vaani";
+    --lesser-font: system-ui;
+    --big-font: 4rem;
+    --big-less-font: 3.25rem;
+    --mid-font: 2rem;
+    --small-font: 1.35rem;
+    --smaller-font: 0.8rem;
+    --accent-black: rgb(23, 23, 23);
+    --accent-yellow: rgb(235, 235, 42);
+    --text-white: rgb(255,255,255);
+}
+
+body {
+   padding-inline: 100px;
+   position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 60dvw;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 52px;
+}
+
+.content-left, .content-right {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid var(--accent-black); */
+    padding: 75px 20px;
+    height: 93dvh;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60dvw;
+    height: 52px;
+    background-color: var(--accent-black);
+    color: var(--text-white);
+    padding: 30px 20px;
+}
+
+.navbar-left {
+    font-family: var(--important-font);
+}
+
+.navbar-right {
+    display: flex;
+    font-family: var(--lesser-font);
+    gap: 3rem;
+}
+
+.navbar-img {
+    width: 52px;
+}
+
+.navbar-section {
+    cursor: pointer;
+}
+
+.content-left {
+    background-color: var(--accent-yellow);
+}
+
+.content-left h1 {
+    font-family: var(--important-font);
+    font-size: var(--big-font);
+    margin-bottom: 35px;
+    line-height: 90px;
+}
+
+.content-left p {
+    font-family: var(--lesser-font);
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: var(--small-font);
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.content-right h1 {
+    font-family: var(--important-font);
+    font-size: var(--big-less-font);
+    text-decoration: underline;
+}
+
+.content-right::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-wrapper, .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    /* grid-template-areas: 
+    "header header img"
+    "text text img"
+    "pill pill pill";
+    grid-template-columns: 1fr, 1fr, 150px; */
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h2 {
+    font-family: var(--important-font);
+    font-size: var(--mid-font);
+    cursor: pointer;
+    grid-area: header;
+}
+
+.project-content p {
+    font-family: var(--lesser-font);
+    margin-bottom: 15px;
+    padding-right: 15px;
+    line-height: 25px;
+    grid-area: text;
+    text-align: justify;
+}
+
+.project-content img {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.pills {
+    display: flex;
+    gap: 10px;
+    font-family: var(--lesser-font);
+    font-size: var(--smaller-font);
+    font-weight: 800;
+    grid-area: pill;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background-color: var(--accent-black);
+    color: var(--text-white);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.skills li {
+    font-family: var(--lesser-font);
+    font-size: var(--small-font);
+    line-height: 60px;
+}
+
+footer {
+    font-family: var(--important-font);
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 60dvw;
+    text-align: center;
+    background-color: var(--accent-black);
+    color: var(--text-white);
+}
+
+@media (width < 1360px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    .content-left, .content-right {
+        height: fit-content;
+    }
+
+    .content-left {
+        padding: 95px 20px 32px 20px;
+    }
+
+    .content-right {
+        overflow-y: visible;
+        padding: 0px 20px 20px 0px;
+    }
+}
+
+@media (width < 800px) {
+    body {
+        padding-inline: 0;
+    }
+
+    .wrapper {
+        margin-inline: auto;
+        width: 80dvw;
+    }
+
+    .navbar, footer {
+        width: 100dvw;
+    }
+
+    footer {
+        font-size: var(--smaller-font);
+    }
+
+    .wrapper {
+        width: auto;
+    }
+
+    .content-right {
+        padding-inline: 20px;
+    }
+}
