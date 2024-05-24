@@ -11,6 +11,7 @@ themeButton.addEventListener("click", () => {
         root.style.setProperty("--accent-white", "rgb(25, 25, 25)");
         root.style.setProperty("--text-white", "rgb(2, 2, 2)");
         root.style.setProperty("--text-black", "rgb(255, 255, 255)");
+        root.style.setProperty("--body-shadow", "rgba(255, 255, 255, 0.145)");
         theme = "dark";
     } else {
         root.style.setProperty("--accent-black", "rgb(23, 23, 23)");
@@ -18,7 +19,8 @@ themeButton.addEventListener("click", () => {
         root.style.setProperty("--accent-white", "rgb(255,255,255)");
         root.style.setProperty("--text-white", "rgb(255,255,255)");
         root.style.setProperty("--text-black", "rgb(0,0,0)");
-        root.style.setProperty("--body-color", "rgb(255,255,255)");
+        root.style.setProperty("--body-color", "rgb(245, 248, 164)");
+        root.style.setProperty("--body-shadow", "rgba(0, 0, 0, 0.211)");
         theme = "light"
     };
 });
