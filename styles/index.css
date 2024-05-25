@@ -1,0 +1,235 @@
+.wrapper {
+    position: relative;
+    width: 70dvw;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 52px;
+    box-shadow: 0px 0px 50px var(--body-shadow);
+    transition: box-shadow 0.4s ease;
+}
+
+.content-left, .content-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 20px;
+    height: 93dvh;
+}
+
+.content-left {
+    background-color: var(--accent-yellow);
+    color: var(--text-black);
+    transition: background-color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+.content-left h1 {
+    font-family: var(--important-font);
+    font-size: var(--big-font);
+    margin-bottom: 35px;
+    line-height: 90px;
+}
+
+.content-left p {
+    font-family: var(--lesser-font);
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: var(--small-font);
+}
+
+.svg-links {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.svg-links a {
+    text-decoration: none;
+    color: var(--accent-black);
+    transition: color 0.4s ease;
+}
+
+.svg-links svg {
+    cursor: pointer;
+    fill: var(--accent-black);
+    width: 30px;
+    height: 30px;
+    transition: 0.4s fill ease;
+}
+
+.svg-links svg:hover {
+    opacity: 0.6;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: var(--accent-white);
+}
+
+.content-right h1 {
+    font-family: var(--important-font);
+    font-size: var(--big-less-font);
+    text-decoration: underline;
+    color: var(--text-black);
+    transition: color 0.4s ease;
+}
+
+.content-right::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.project-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info svg {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    stroke: var(--accent-black);
+}
+
+.project-content:has(.project-info a:hover) .project-info svg {
+    opacity: 1;
+}
+
+.project-info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.project-content h2 {
+    font-family: var(--important-font);
+    font-size: var(--mid-font);
+    color: var(--text-black);
+    grid-area: header;
+    transition: color 0.4s ease;
+}
+
+.project-content p {
+    font-family: var(--lesser-font);
+    color: var(--text-black);
+    margin-bottom: 15px;
+    padding-right: 15px;
+    line-height: 25px;
+    grid-area: text;
+    transition: color 0.4s ease;
+}
+
+.project-content img {
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.pills {
+    display: flex;
+    gap: 10px;
+    font-family: var(--lesser-font);
+    font-size: var(--smaller-font);
+    font-weight: 800;
+    grid-area: pill;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background-color: var(--accent-black);
+    color: var(--text-white);
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+
+.skills li {
+    font-family: var(--lesser-font);
+    font-size: var(--small-font);
+    color: var(--text-black);
+    line-height: 60px;
+    transition: color 0.4s ease;
+}
+
+.theme-button {
+    color: var(--text-black);
+    position: absolute;
+    z-index: 1000;
+    top: 35px;
+    left: 12px;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.theme-button svg {
+    color: var(--accent-black);
+    transition: color 0.4s ease;
+}
+
+.theme-button svg:hover {
+    opacity: 0.6;
+}
+
+@media (width < 1152px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0px;
+        width: auto;
+    }
+
+    .theme-button {
+        top: 69px;
+    }
+
+    .content-left, .content-right {
+        height: fit-content;
+    }
+
+    .content-left {
+        padding: 95px 20px 52px 20px;
+    }
+
+    .content-right {
+        overflow-y: visible;
+        padding: 30px 20px 80px 20px;
+    }
+}
+
+@media (width < 800px) {
+    .wrapper {
+        width: auto;
+    }
+
+    .content-right {
+        padding-inline: 20px;
+    }
+}
