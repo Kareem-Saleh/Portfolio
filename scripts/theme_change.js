@@ -4,7 +4,7 @@ const themeButton = document.querySelector(".theme-button");
 let theme = localStorage.getItem("theme");
 
 if (theme == null) {
-    theme = "light";
+    theme = localStorage.setItem("theme", "light");
 };
 
 if (theme == "light") {
