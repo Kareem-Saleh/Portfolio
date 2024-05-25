@@ -25,10 +25,16 @@
 
 .navbar-img {
     width: 52px;
+    cursor: pointer;
 }
 
-.navbar-section {
+.navbar-right a {
     cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-right a:link, .navbar-right a:visited, .navbar-right a:hover, .navbar-right a:active {
+    color: var(--text-white);
 }
 
 footer {
