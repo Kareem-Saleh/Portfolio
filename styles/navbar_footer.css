@@ -55,6 +55,12 @@ footer {
 @media (width < 1152px) {
     .navbar, footer {
         width: 100dvw;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .navbar {
+        padding-right: 30px;
     }
 }
 
