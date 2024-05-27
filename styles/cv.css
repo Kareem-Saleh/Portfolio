@@ -1,0 +1,60 @@
+.wrapper {
+    position: relative;
+    width: 70dvw;
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+    padding-top: 52px;
+    box-shadow: 0px 0px 50px var(--body-shadow);
+    transition: box-shadow 0.4s ease;
+    min-height: 100dvh;
+    background-color: var(--accent-white);
+}
+
+.theme-button {
+    color: var(--text-black);
+    position: absolute;
+    z-index: 1000;
+    top: 80px;
+    left: 12px;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.pdf-viewer {
+    height: 690px;
+    width: 900px;
+}
+
+.wrapper a {
+    color: var(--text-black);
+    font-family: var(--lesser-font);
+    font-weight: 600;
+    padding-block: 25px;
+}
+
+@media (width < 1450px) {
+    .pdf-viewer {
+        height: 70dvh;
+        width: 80dvw;
+    }
+
+    .wrapper {
+        width: 100dvw;
+        padding-inline: 50px;
+    }
+
+    .wrapper a {
+        text-align: center;
+    }
+
+    .navbar, footer {
+        width: 100dvw;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .navbar {
+        padding-right: 30px;
+    }
+}
