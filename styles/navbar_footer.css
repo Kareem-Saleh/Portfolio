@@ -1,71 +1,75 @@
 .navbar {
-    position: fixed;
-    z-index: 10000;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70dvw;
-    height: 52px;
-    background-color: var(--accent-black);
-    color: var(--text-white);
-    padding: 30px 20px;
-    transition: color 0.4s ease;
-    transition: background-color 0.4s ease;
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70dvw;
+  height: 52px;
+  background-color: var(--accent-black);
+  color: var(--text-white);
+  padding: 30px 20px;
+  transition: color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .navbar-right {
-    display: flex;
-    font-family: var(--lesser-font);
-    color: var(--text-white);
-    gap: 3rem;
-    transition: color 0.4s ease;
+  display: flex;
+  font-family: var(--lesser-font);
+  color: var(--text-white);
+  gap: 3rem;
+  transition: color 0.4s ease;
 }
 
 .navbar-img {
-    width: 52px;
-    cursor: pointer;
+  width: 52px;
+  cursor: pointer;
 }
 
 .navbar-right a {
-    cursor: pointer;
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.navbar-right a:link, .navbar-right a:visited, .navbar-right a:hover, .navbar-right a:active {
-    color: var(--text-white);
+.navbar-right a:link,
+.navbar-right a:visited,
+.navbar-right a:hover,
+.navbar-right a:active {
+  color: var(--text-white);
 }
 
 footer {
-    font-family: var(--important-font);
-    position: fixed;
-    z-index: 10000;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0px;
-    width: 70dvw;
-    text-align: center;
-    background-color: var(--accent-black);
-    color: var(--text-white);
-    transition: color 0.4s ease;
-    transition: background-color 0.4s ease;
+  font-family: var(--important-font);
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  width: 70dvw;
+  text-align: center;
+  background-color: var(--accent-black);
+  color: var(--text-white);
+  transition: color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 @media (width < 1152px) {
-    .navbar, footer {
-        width: 100dvw;
-        left: 0;
-        transform: translateX(0);
-    }
+  .navbar,
+  footer {
+    width: 100dvw;
+    left: 0;
+    transform: translateX(0);
+  }
 
-    .navbar {
-        padding-right: 30px;
-    }
+  .navbar {
+    padding-right: 30px;
+  }
 }
 
 @media (width < 800px) {
-    footer {
-        font-size: var(--smaller-font);
-    }
+  footer {
+    font-size: var(--smaller-font);
+  }
 }

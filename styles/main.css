@@ -1,27 +1,27 @@
-* { 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --important-font: "Mukta Vaani";
-    --lesser-font: system-ui;
-    --big-font: 4rem;
-    --big-less-font: 3.25rem;
-    --mid-font: 2rem;
-    --small-font: 1.35rem;
-    --smaller-font: 0.8rem;
-    /* This is the light theme */
-    --body-color: rgb(245, 248, 164);
-    --body-shadow: rgba(0, 0, 0, 0.211);
-    --accent-black: rgb(23, 23, 23);
-    --accent-yellow: rgb(246, 225, 41);
-    --accent-white: rgb(255, 255, 255);
-    --text-white: rgb(255,255,255);
-    --text-black: rgb(0,0,0);
-    /* This is the dark theme */
-    /* --accent-black: rgb(236, 209, 209);
+  --important-font: "Mukta Vaani";
+  --lesser-font: system-ui;
+  --big-font: 4rem;
+  --big-less-font: 3.25rem;
+  --mid-font: 2rem;
+  --small-font: 1.35rem;
+  --smaller-font: 0.8rem;
+  /* This is the light theme */
+  --body-color: rgb(245, 248, 164);
+  --body-shadow: rgba(0, 0, 0, 0.211);
+  --accent-black: rgb(23, 23, 23);
+  --accent-yellow: rgb(246, 225, 41);
+  --accent-white: rgb(255, 255, 255);
+  --text-white: rgb(255, 255, 255);
+  --text-black: rgb(0, 0, 0);
+  /* This is the dark theme */
+  /* --accent-black: rgb(236, 209, 209);
     --accent-yellow: rgb(52, 48, 48);
     --accent-white: rgb(25, 25, 25);
     --text-white: rgb(2, 2, 2);
@@ -31,7 +31,7 @@
 }
 
 body {
-   position: relative;
-   background-color: var(--body-color);
-   transition: background-color 0.4s ease;
+  position: relative;
+  background-color: var(--body-color);
+  transition: background-color 0.4s ease;
 }
