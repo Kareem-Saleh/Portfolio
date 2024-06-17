@@ -102,6 +102,21 @@
   grid-template-columns: 1fr 150px;
 }
 
+.fade {
+  opacity: 0;
+  scale: 0.9 1;
+  animation: fade-in-content ease forwards;
+  animation-timeline: view();
+  animation-range: 80px 550px;
+}
+
+@keyframes fade-in-content {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 .project-info {
   position: relative;
   display: flex;
