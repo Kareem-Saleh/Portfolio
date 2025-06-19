@@ -18,6 +18,8 @@
 .navbar-right {
   display: flex;
   font-family: var(--lesser-font);
+  font-size: var(--small-font);
+  font-weight: 600;
   color: var(--text-white);
   gap: 3rem;
   transition: color 0.4s ease;
@@ -29,8 +31,23 @@
 }
 
 .navbar-right a {
+  position: relative;
   cursor: pointer;
   text-decoration: none;
+}
+
+.navbar-right a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  background-color: var(--accent-white);
+  height: 5px;
+  width: 0px;
+  transition: 0.4s width ease;
+}
+
+.navbar-right a:hover::before {
+  width: 100%;
 }
 
 .navbar-right a:link,
