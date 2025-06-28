@@ -21,8 +21,8 @@
 .content-left {
   background-color: var(--accent-yellow);
   color: var(--text-black);
-  transition: background-color 0.4s ease;
-  transition: color 0.4s ease;
+  /* transition: background-color 0.4s ease;
+  transition: color 0.4s ease; */
 }
 
 .content-left h1 {
@@ -48,7 +48,7 @@
 .svg-links a {
   text-decoration: none;
   color: var(--accent-black);
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .svg-links svg {
@@ -56,7 +56,7 @@
   fill: var(--accent-black);
   width: 30px;
   height: 30px;
-  transition: 0.4s fill ease;
+  /* transition: 0.4s fill ease; */
 }
 
 .svg-links svg:hover {
@@ -79,7 +79,7 @@
   text-decoration: underline;
   text-decoration-thickness: 5px;
   color: var(--text-black);
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .content-right::-webkit-scrollbar {
@@ -152,7 +152,7 @@
   font-size: var(--mid-font);
   color: var(--text-black);
   grid-area: header;
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .project-content h2::before {
@@ -176,7 +176,7 @@
   padding-right: 15px;
   line-height: 25px;
   grid-area: text;
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .project-content img {
@@ -202,8 +202,8 @@
   color: var(--text-white);
   padding: 5px 20px;
   border-radius: 10px;
-  transition: color 0.4s ease;
-  transition: background-color 0.4s ease;
+  /* transition: color 0.4s ease;
+  transition: background-color 0.4s ease; */
 }
 
 .skills-wrapper li {
@@ -211,7 +211,7 @@
   font-size: var(--small-font);
   color: var(--text-black);
   line-height: 40px;
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .theme-button {
@@ -221,12 +221,12 @@
   top: 35px;
   left: 12px;
   cursor: pointer;
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .theme-button svg {
   color: var(--accent-black);
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .theme-button svg:hover {

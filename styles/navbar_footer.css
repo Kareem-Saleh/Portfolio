@@ -11,8 +11,8 @@
   background-color: var(--accent-black);
   color: var(--text-white);
   padding: 30px 20px;
-  transition: color 0.4s ease;
-  transition: background-color 0.4s ease;
+  /* transition: color 0.4s ease;
+  transition: background-color 0.4s ease; */
 }
 
 .navbar-right {
@@ -22,7 +22,7 @@
   font-weight: 600;
   color: var(--text-white);
   gap: 3rem;
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; */
 }
 
 .navbar-img {
@@ -68,8 +68,8 @@ footer {
   text-align: center;
   background-color: var(--accent-black);
   color: var(--text-white);
-  transition: color 0.4s ease;
-  transition: background-color 0.4s ease;
+  /* transition: color 0.4s ease;
+  transition: background-color 0.4s ease; */
 }
 
 @media (width < 1152px) {

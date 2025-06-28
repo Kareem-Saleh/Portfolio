@@ -12,6 +12,7 @@
   --mid-font: 2rem;
   --small-font: 1.35rem;
   --smaller-font: 0.8rem;
+
   /* This is the light theme */
   --body-color: rgb(245, 248, 164);
   --body-shadow: rgba(0, 0, 0, 0.211);
@@ -20,6 +21,7 @@
   --accent-white: rgb(255, 255, 255);
   --text-white: rgb(255, 255, 255);
   --text-black: rgb(0, 0, 0);
+
   /* This is the dark theme */
   /* --accent-black: rgb(236, 209, 209);
     --accent-yellow: rgb(52, 48, 48);
@@ -30,8 +32,18 @@
     --body-shadow: rgba(255, 255, 255, 0.145); */
 }
 
+.dark-mode {
+  --accent-black: rgb(236, 209, 209);
+  --accent-yellow: rgb(52, 48, 48);
+  --accent-white: rgb(25, 25, 25);
+  --text-white: rgb(2, 2, 2);
+  --text-black: rgb(255, 255, 255);
+  --body-color: rgb(0, 0, 0);
+  --body-shadow: rgba(255, 255, 255, 0.145);
+}
+
 body {
   position: relative;
   background-color: var(--body-color);
-  transition: background-color 0.4s ease;
+  /* transition: background-color 0.4s ease; */
 }

@@ -3,11 +3,11 @@ const themeButton = document.querySelector(".theme-button");
 
 let theme = localStorage.getItem("theme");
 
-if (theme == null) {
+if (theme === null) {
   theme = localStorage.setItem("theme", "light");
 }
 
-if (theme == "light") {
+if (theme === "light") {
   root.style.setProperty("--accent-black", "rgb(23, 23, 23)");
   root.style.setProperty("--accent-yellow", "rgb(235, 235, 42)");
   root.style.setProperty("--accent-white", "rgb(255,255,255)");
@@ -17,7 +17,7 @@ if (theme == "light") {
   root.style.setProperty("--body-shadow", "rgba(0, 0, 0, 0.211)");
 }
 
-if (theme == "dark") {
+if (theme === "dark") {
   root.style.setProperty("--body-color", "rgb(0,0,0)");
   root.style.setProperty("--accent-black", "rgb(236, 209, 209)");
   root.style.setProperty("--accent-yellow", "rgb(52, 48, 48)");
@@ -30,7 +30,7 @@ if (theme == "dark") {
 themeButton.addEventListener("click", () => {
   theme = localStorage.getItem("theme");
 
-  if (theme == "light") {
+  if (theme === "light") {
     root.style.setProperty("--body-color", "rgb(0,0,0)");
     root.style.setProperty("--accent-black", "rgb(236, 209, 209)");
     root.style.setProperty("--accent-yellow", "rgb(52, 48, 48)");
@@ -41,7 +41,7 @@ themeButton.addEventListener("click", () => {
     theme = localStorage.setItem("theme", "dark");
   }
 
-  if (theme == "dark") {
+  if (theme === "dark") {
     root.style.setProperty("--accent-black", "rgb(23, 23, 23)");
     root.style.setProperty("--accent-yellow", "rgb(235, 235, 42)");
     root.style.setProperty("--accent-white", "rgb(255,255,255)");
