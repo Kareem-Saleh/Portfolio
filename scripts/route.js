@@ -1,89 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kareem Saleh</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/navbar_footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="imgs/favicon.ico" />
-    <script src="./scripts/theme_toggle.js" defer></script>
-    <script src="./scripts/scrollToSection.js" defer></script>
-    <!-- <script src="./scripts/route.js" defer></script> -->
-  </head>
-  <body>
-    <!-- <div class="navbar">
-      <div class="navbar-left">
-        <a href="index.html">
-          <img class="navbar-img" src="imgs/lmao xd logo.png" />
-        </a>
-      </div>
-      <div class="navbar-right">
-        <a
-          href="https://drive.google.com/file/d/1cAUy8OkZicWst2hfZdbXOVWnOvL_umgD/view"
-        >
-          <div class="navbar-section">Resume</div>
-        </a>
-
-        <a href="about_me.html">
-          <div class="navbar-section">About Me</div>
-        </a>
-      </div>
-    </div> -->
-
-    <div class="wrapper">
-      <div class="content-left">
-        <nav class="navigation">
-          <a href="/">
-            <img class="navbar-img" src="imgs/lmao xd logo.png" />
-          </a>
-          <ul class="navigation-buttons">
-            <a href="#projects" class="jump-link">
-              <li>Projects</li>
-            </a>
-            <a href="#skills" class="jump-link">
-              <li>Skills</li>
-            </a>
-            <a href="#about" class="jump-link">
-              <li>About Me</li>
-            </a>
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1cAUy8OkZicWst2hfZdbXOVWnOvL_umgD/view"
-            >
-              <li>Resume</li>
-            </a>
-          </ul>
-          <div class="theme-button">
-            <svg
-              fill="#000000"
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="currentColor"
-                d="M13,6a1,1,0,0,1-1,1,3,3,0,0,0-3,3,1,1,0,0,1-2,0,5.006,5.006,0,0,1,5-5A1,1,0,0,1,13,6Zm8,4a8.96,8.96,0,0,1-5,8.06V19a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1v-.94A9,9,0,1,1,21,10Zm-2,0a7,7,0,1,0-9.625,6.486,1,1,0,0,1,.625.927V18h4v-.587a1,1,0,0,1,.625-.927A6.972,6.972,0,0,0,19,10ZM15,23a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Z"
-              />
-            </svg>
-          </div>
-        </nav>
-        <div class="intro-container">
-          <h1>Hi! My name is Kareem Saleh...</h1>
+const views = {
+  boards: {
+    left: ``,
+    right: ``,
+  },
+  project1: {
+    left: ``,
+    right: ``,
+  },
+  default: {
+    left: `<h1>Hi! My name is Kareem Saleh...</h1>
           <p>
             I'm currently a
             <strong>2<sup>nd</sup> year physics student</strong> at the
@@ -134,12 +59,8 @@
                 />
               </svg>
             </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-right">
-        <div id="projects" class="projects-wrapper">
+          </div>`,
+    right: `<div id="projects" class="projects-wrapper">
           <h1>Projects</h1>
 
           <div class="project-content">
@@ -241,19 +162,59 @@
             </div>
             <img src="imgs/doppler shift.webp" />
           </div>
+
+          <!-- <div class="project-content fade">
+            <div class="project-info">
+              <a href="https://www.tiktok.com/@lmao_xpppp" target="_blank">
+                <h2>TikTok</h2>
+                <svg
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7M17 7H8M17 7V16"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <p>
+                I post quite often! The content is very brainrotted though so
+                please don't make fun of me and just look at my video editing
+                capabilities.
+              </p>
+              <div class="pills">
+                <div class="pill">DaVinci Resolve</div>
+                <div class="pill">Content Creation</div>
+              </div>
+            </div>
+            <img src="imgs/tiktok.webp" />
+          </div> -->
         </div>
 
-        <div id="skills" class="skills-wrapper">
+        <div id="skills" class="skills-wrapper fade">
           <h1>Skills</h1>
           <li>✷ Proficient in Python, Javascript, CSS and HTML</li>
           <li>✷ Proficient in video and photo editing</li>
           <li>✷ Fluent in English, Japanese and Indonesian</li>
-        </div>
-      </div>
-    </div>
+        </div>`,
+  },
+};
 
-    <!-- <footer>
-      This site was created entirely by myself with HTML, CSS and Javascript :D
-    </footer> -->
-  </body>
-</html>
+const containerRight = document.querySelector(".content-right");
+const containerLeft = document.querySelector(".intro-container");
+
+function handleRouteChange() {
+  const hash = window.location.hash.substring(1);
+  const contentRight = views[hash]["right"] || views["default"]["right"];
+  const contentLeft = views[hash]["left"] || views["default"]["left"];
+
+  containerRight.innerHTML = contentRight;
+  containerLeft.innerHTML = contentLeft;
+}
+
+window.addEventListener("hashchange", handleRouteChange);
