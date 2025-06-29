@@ -7,6 +7,10 @@ const views = {
     left: ``,
     right: ``,
   },
+  project2: {
+    left: ``,
+    right: ``,
+  },
   default: {
     left: `<h1>Hi! My name is Kareem Saleh...</h1>
           <p>
@@ -162,41 +166,9 @@ const views = {
             </div>
             <img src="imgs/doppler shift.webp" />
           </div>
-
-          <!-- <div class="project-content fade">
-            <div class="project-info">
-              <a href="https://www.tiktok.com/@lmao_xpppp" target="_blank">
-                <h2>TikTok</h2>
-                <svg
-                  width="30px"
-                  height="30px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 17L17 7M17 7H8M17 7V16"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <p>
-                I post quite often! The content is very brainrotted though so
-                please don't make fun of me and just look at my video editing
-                capabilities.
-              </p>
-              <div class="pills">
-                <div class="pill">DaVinci Resolve</div>
-                <div class="pill">Content Creation</div>
-              </div>
-            </div>
-            <img src="imgs/tiktok.webp" />
-          </div> -->
         </div>
 
-        <div id="skills" class="skills-wrapper fade">
+        <div id="skills" class="skills-wrapper">
           <h1>Skills</h1>
           <li>✷ Proficient in Python, Javascript, CSS and HTML</li>
           <li>✷ Proficient in video and photo editing</li>
@@ -205,16 +177,48 @@ const views = {
   },
 };
 
+const navigationButtons = `<a href="#projects" class="jump-link">
+              <li>Projects</li>
+            </a>
+            <a href="#skills" class="jump-link">
+              <li>Skills</li>
+            </a>
+            <a href="#about" class="jump-link">
+              <li>About Me</li>
+            </a>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1cAUy8OkZicWst2hfZdbXOVWnOvL_umgD/view"
+            >
+              <li>Resume</li>
+            </a>`;
+
 const containerRight = document.querySelector(".content-right");
 const containerLeft = document.querySelector(".intro-container");
 
 function handleRouteChange() {
   const hash = window.location.hash.substring(1);
+
   const contentRight = views[hash]["right"] || views["default"]["right"];
   const contentLeft = views[hash]["left"] || views["default"]["left"];
 
   containerRight.innerHTML = contentRight;
   containerLeft.innerHTML = contentLeft;
+
+  containerRight.style.pointerEvents = "none";
+
+  console.log("I am animating");
+  const animationIn = setTimeout(() => {
+    console.log("animated in");
+    isAnimating = false;
+    containerRight.style.pointerEvents = "auto";
+
+    containerRight.classList.add("right-shown");
+    containerLeft.classList.add("left-shown");
+  }, 10);
+
+  containerRight.classList.remove("right-shown");
+  containerLeft.classList.remove("left-shown");
 }
 
 window.addEventListener("hashchange", handleRouteChange);

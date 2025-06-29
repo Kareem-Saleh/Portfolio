@@ -137,14 +137,13 @@
 }
 
 .project-info svg {
-  opacity: 0;
   transition: opacity 0.2s ease;
   stroke: var(--accent-black);
 }
 
-.project-content:has(.project-info a:hover) .project-info svg {
+/* .project-content:has(.project-info a:hover) .project-info svg {
   opacity: 1;
-}
+} */
 
 .project-info a {
   display: flex;
@@ -173,7 +172,7 @@
   transition: 0.4s width ease;
 }
 
-.project-content h2:hover::before {
+.project-content a:hover h2::before {
   width: 100%;
 }
 
@@ -282,6 +281,49 @@
   margin-block: auto;
 }
 
+.right-shown {
+  animation: fadeIn 0.5s forwards ease-out;
+}
+
+.left-shown {
+  animation: rollIn 0.5s forwards ease-out;
+}
+
+.navbar-img {
+  width: 48px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: var(--accent-black);
+}
+
+.none {
+  display: none;
+}
+
+.sun path {
+  fill: rgb(246, 225, 41);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media (width < 1152px) {
   .wrapper {
     display: flex;
@@ -292,7 +334,7 @@
   }
 
   .theme-button {
-    top: 69px;
+    display: flex;
   }
 
   .content-left,
