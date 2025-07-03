@@ -21,6 +21,19 @@
     <link rel="icon" href="/imgs/favicon.ico" />
     <script src="./scripts/theme_toggle.js" defer></script>
     <script src="./scripts/scrollToSection.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" defer>
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "KlV5bV-0U4uDqOOk9",
+        });
+      })();
+    </script>
+    <script src="scripts/sendEmail.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -46,7 +59,7 @@
               target="_blank"
               href="https://drive.google.com/file/d/1cAUy8OkZicWst2hfZdbXOVWnOvL_umgD/view"
             >
-              <li>Resume</li>
+              <li class="resume">Resume</li>
             </a>
           </ul>
           <div class="theme-button">
@@ -160,7 +173,7 @@
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/kareem-saleh-272042333/"
+              href="https://www.linkedin.com/in/kareem-lauhari-saleh-272042333/"
               target="_blank"
             >
               <svg
@@ -184,7 +197,7 @@
 
           <div class="project-content">
             <div class="project-info">
-              <a class="blog-href" href="/blog/boards.html">
+              <a class="blog-href" href="blog/boards.html">
                 <h2>Boards</h2>
                 <svg
                   width="30px"
@@ -340,17 +353,14 @@
                   />
                 </svg>
               </a>
-              <p>
-                This program reads in a data file containing measurements of the
-                wavelength of light being emmited from a distant star. The data
-                is then used to determine particular properties of the exoplanet
-                that orbits the star.
-              </p>
+              <p>The website you are on right now!</p>
               <div class="pills">
-                <div class="pill">Python</div>
-                <div class="pill">Physics</div>
-                <div class="pill">Data analysis</div>
-                <div class="pill">Data visualisation</div>
+                <div class="pill">JavaScript</div>
+                <div class="pill">HTML</div>
+                <div class="pill">CSS</div>
+                <div class="pill">Website design</div>
+                <div class="pill">Typography</div>
+                <div class="pill">Creative writing</div>
               </div>
             </div>
             <img src="imgs/portfolio/portfolio1.webp" />
@@ -680,7 +690,7 @@
 
         <section id="about" class="about-container">
           <h1>About Me</h1>
-          <img src="imgs/me blur.webp" alt="Kareem Saleh" />
+          <img src="imgs/me glasses.webp" alt="Kareem Saleh" />
           <p>
             I'm a physics student with a passion for unraveling how things work!
             Whether it's the laws of the universe or the logic behind a sleek
@@ -716,12 +726,46 @@
 
         <section id="contact" class="contact-container">
           <h1>Contact</h1>
-          <h1>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
-            maxime dolores quisquam, optio autem quia ipsa libero corrupti esse
-            cupiditate non nisi laboriosam architecto, perspiciatis fugiat
-            voluptates asperiores beatae alias.
-          </h1>
+          <p>
+            Send me a message! I'm free to reply about anything that comes into
+            your mind!
+          </p>
+          <form id="form" class="form-container">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                placeholder="Bob"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                placeholder="Bob@email.com"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                placeholder="Maximum of 300 characters"
+                maxlength="300"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Send" class="send" />
+          </form>
         </section>
       </div>
     </div>

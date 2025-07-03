@@ -15,7 +15,7 @@ html {
   --big-less-font: 3.25rem;
   --mid-font: 2rem;
   --small-font: 1.35rem;
-  --smaller-font: 0.8rem;
+  --smaller-font: 1.1rem;
 
   /* This is the light theme */
   --body-color: rgb(245, 248, 164);
@@ -28,6 +28,9 @@ html {
   --scrollbar-thumb: rgb(23, 23, 23);
   --scrollbar-track: rgb(255, 255, 255);
   --image-gallery: rgb(23, 23, 23);
+  --contact-form-border: rgb(23, 23, 23);
+  --contact-form-backgroud: rgb(255, 255, 255);
+  --send-hover: rgb(47, 47, 47);
 
   /* This is the dark theme */
   /* --accent-black: rgb(236, 209, 209);
@@ -48,7 +51,10 @@ html {
   --body-color: rgb(0, 0, 0);
   --body-shadow: rgba(255, 255, 255, 0.145);
   --scrollbar-thumb: rgb(236, 209, 209);
-  --scrollbar-track: rgb(52, 48, 48);
+  --scrollbar-track: rgb(23, 23, 23);
+  --contact-form-border: rgb(255, 255, 255);
+  --contact-form-backgroud: rgb(23, 23, 23);
+  --send-hover: rgb(229, 187, 187);
 }
 
 body {

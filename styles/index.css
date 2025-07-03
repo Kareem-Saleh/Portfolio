@@ -127,6 +127,7 @@
   font-size: var(--mid-font);
   color: var(--text-black);
   grid-area: header;
+  margin-bottom: 8px;
 }
 
 .project-content h2::before {
@@ -146,7 +147,7 @@
 .project-content p {
   font-family: var(--lesser-font);
   color: var(--text-black);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-right: 15px;
   line-height: 25px;
   grid-area: text;
@@ -368,8 +369,7 @@
 
 .about-container img {
   width: 380px;
-  aspect-ratio: 1 / 1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   justify-self: center;
 }
 
@@ -468,6 +468,70 @@
   margin-block: auto;
 }
 
+.form-container {
+  display: grid;
+  gap: 30px;
+}
+
+.form-group {
+  display: grid;
+  width: 300px;
+  gap: 20px;
+}
+
+.form-group label {
+  font-family: var(--lesser-font);
+  font-size: var(--small-font);
+  color: var(--text-black);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 5px;
+  border: 3px solid var(--contact-form-border);
+  font-family: var(--lesser-font);
+  font-size: var(--smaller-font);
+  color: var(--text-black);
+  background-color: var(--contact-form-background);
+  caret-color: var(--accent-black);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.send {
+  font-family: var(--lesser-font);
+  font-size: var(--small-font);
+  color: var(--text-white);
+  background-color: var(--accent-black);
+  width: 120px;
+  padding: 8px 5px;
+  border: none;
+  border-radius: 6px;
+}
+
+.send:hover {
+  background-color: var(--send-hover);
+  cursor: pointer;
+}
+
+.contact-container {
+  border: 7px solid var(--accent-black);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact-container p {
+  color: var(--text-black);
+  font-family: var(--lesser-font);
+  font-size: var(--small-font);
+  margin-bottom: 40px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -515,6 +579,10 @@
     overflow-y: visible;
     padding: 30px 80px 80px 80px;
   }
+
+  .image-gallery {
+    width: auto;
+  }
 }
 
 @media (width < 800px) {
@@ -522,7 +590,17 @@
     width: auto;
   }
 
-  .content-right {
+  .content-right,
+  .content-left {
     padding-inline: 20px;
+  }
+
+  .skill-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .front-end-imgs {
+    flex-direction: row;
   }
 }
