@@ -164,7 +164,6 @@
   display: flex;
   gap: 10px;
   font-family: var(--lesser-font);
-  font-size: var(--smaller-font);
   font-weight: 800;
   grid-area: pill;
   flex-wrap: wrap;
@@ -209,6 +208,7 @@
   flex-grow: 1;
   justify-content: center;
   gap: 40px;
+  padding-inline: 50px;
   font-family: var(--lesser-font);
   font-size: var(--small-font);
   font-weight: bold;
@@ -248,8 +248,7 @@
 
 .navbar-img {
   width: 52px;
-  padding: 4px;
-  cursor: pointer;
+  /* padding: 4px; */
   /* background-color: var(--accent-black); */
 }
 
@@ -415,6 +414,7 @@
 .blog-details h3 {
   font-size: var(--smaller-font);
   font-weight: normal;
+  margin-bottom: 7px;
 }
 
 .blog-details p {
@@ -438,6 +438,15 @@
   margin-bottom: 40px;
   line-height: 32px;
   letter-spacing: 1.5px;
+}
+
+.blog-content a:link,
+.blog-content a:visited,
+.blog-content a:hover,
+.blog-content a:active {
+  color: var(--text-black);
+  font-weight: bold;
+  font-style: italic;
 }
 
 .blog-content h2 {
@@ -530,6 +539,21 @@
   font-family: var(--lesser-font);
   font-size: var(--small-font);
   margin-bottom: 40px;
+}
+
+.code {
+  font-family: monospace;
+  background-color: var(--accent-black);
+  color: var(--text-white);
+  padding-inline: 8px;
+}
+
+.content-right:has(.error-question) {
+  place-content: center;
+}
+
+.error-question {
+  place-self: center;
 }
 
 @keyframes fadeIn {

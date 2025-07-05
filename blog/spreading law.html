@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | Portfolio Website</title>
+    <title>Blog | Boards</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -107,11 +107,11 @@
           </div>
         </nav>
         <div class="project-left">
-          <h1>Portfolio Website</h1>
+          <h1>Spreading Law</h1>
           <div class="image-gallery">
-            <img src="../imgs/portfolio/portfolio1.webp" />
-            <img src="../imgs/portfolio/portfolio2.webp" />
-            <img src="../imgs/portfolio/portfolio3.webp" />
+            <img src="../imgs/spreading law/spreading law1.webp" />
+            <img src="../imgs/spreading law/spreading law2.webp" />
+            <img src="../imgs/spreading law/spreading law3.webp" />
           </div>
         </div>
       </div>
@@ -119,52 +119,79 @@
         <div class="blog-details">
           <div class="blog-details-section">
             <h3>Category</h3>
-            <p>Web</p>
+            <p>Data Analysis</p>
           </div>
           <div class="blog-details-section">
             <h3>Link</h3>
-            <a href="https://kareem-saleh.github.io/Portfolio/">
-              https://kareem-saleh.github.io/Portfolio/
-            </a>
+            <a
+              href="https://github.com/Kareem-Saleh/PHYS20762-Project-1-Data-Analysis/blob/main/spreading_law.ipynb"
+              >https://github.com/Kareem-Saleh/PHYS20762-Project-1-Data-Analysis/blob/main/spreading_law.ipynb</a
+            >
           </div>
           <div class="blog-details-section blog-skills-container">
             <h3>Skills learnt / improved</h3>
             <div class="blog-skills">
-              <p>Responsive design</p>
-              <p>DOM manipulation</p>
-              <p>Local storage</p>
-              <p>Event handling</p>
+              <p>Python programming</p>
+              <p>Data visualisation</p>
+              <p>Statistical analysis</p>
+              <p>Science communication</p>
+              <p>Problem Solving</p>
             </div>
           </div>
         </div>
         <div class="blog-content">
+          <h2>Background</h2>
           <p>
-            A clean, clutter-free portfolio designed to showcase my work easily.
-            This site aims to have crisp typography, ample white space, and
-            intuitive navigation. It also features a dynamic grid layout, smooth
-            hover effects and a dark theme toggle. The contact section at the
-            end also allows for an easy way for people to message me about
-            anything!
+            This work was one of my graded projects for the computational
+            physics class I enrolled in during my 2nd year. The experimental
+            data comes from an experiment carried out by
+            <a
+              href="https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.2.094002"
+              >Kant et al. (2017)</a
+            >. The motivation for this work comes from the deposition of
+            micro-droplets in inkjet printing. As droplets fall onto a piece of
+            paper the drop does not stay as a perfect "blob" and spreads out.
+            The behaviour of this spreading can be fully explained by a set of
+            equations known as the Navier-Stoke Equations, however, doing this
+            is extremely complicated. A simpler model is needed! This work
+            analyses the data to figure out which model is better for this
+            scenario. The names of these models are the Cox-Voinov model and the
+            de Gennes model.
           </p>
-          <h2>Design</h2>
+          <h2>What I learned</h2>
           <p>
-            This website has went through major revisions during its completion.
-            Whenever a new idea was being implented, a better more interesting
-            idea would pop up along the way. This was due to the amount of great
-            design examples I was sifting through and never being fully
-            satisfied with wat I imagined up. I wanted to challenge myself to
-            implement better layouts and more intuitive interactions. One the
-            biggest tasks in making this site was I had to ensure it remained
-            responsive, performant, and accessible across all devices.
+            This project marked my first serious jump into computational physics
+            and Jupyter Notebooks, transforming me from a programming novice to
+            someone capable of implementing complex numerical analysis. I
+            initially struggled to handle large amounts of data into NumPy and
+            creating proper visualizations with Matplotlib, but learning how to
+            use Jupyter's interactive environment allowed me to test each step
+            incrementally.
           </p>
-          <h2>Technical Challenges</h2>
           <p>
-            The technical challenges were just as demanding as the design ones.
-            JavaScript was my main tool in elevating the user experience. This
-            led me to learn more about DOM manipulation and event handling
-            through features such as the dark theme toggle and making sure the
-            navigation had a smooth scroll. This project reinforced the value of
-            patience, adaptability, and continuous learning in web development.
+            The biggest challenges came when implementing numerical solutions
+            for contact angles using SciPy's fsolve and fitting spreading laws.
+            It was here I learned the importance of writing clear, concise code
+            that stopped cryptic error messages.
+          </p>
+          <p>
+            Validating the physical realism of my results was equally critical.
+            While fitting empirical laws such as Cox-Voinov and de Gennes, I
+            questioned whether the derived parameters, like the velocity scale,
+            were physically plausible. Cross-referencing my findings with
+            existing literature helped confirm their validity, reminding me that
+            mathematical models must align with real-world physics. Deciding
+            between competing spreading laws required more than just visual
+            inspection. I relied on statistical tools like χ² analysis and
+            residual plots to determine that the Cox-Voinov law provided a
+            better fit, emphasising the need for quantitative rigor in model
+            selection.
+          </p>
+          <p>
+            Through persistent debugging and leveraging Jupyter's instant
+            feedback, I not only solved the physics problem but developed core
+            programming skills in data handling, visualization, and numerical
+            methods.
           </p>
         </div>
       </div>
