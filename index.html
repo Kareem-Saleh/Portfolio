@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/imgs/favicon.ico" />
+    <link rel="icon" href="./imgs/favicons/light/favicon.ico" />
     <script src="./scripts/theme_toggle.js" defer></script>
     <script src="./scripts/scrollToSection.js" defer></script>
     <script
@@ -33,13 +33,16 @@
         });
       })();
     </script>
-    <script src="scripts/sendEmail.js" defer></script>
+    <script src="./scripts/sendEmail.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="content-left">
         <nav class="navigation">
-          <img class="navbar-img" src="imgs/lmao xd logo.png" />
+          <div class="navbar-img">
+            KS
+            <!-- <img class="navbar-img" src="./imgs/lmao xd logo.png" /> -->
+          </div>
 
           <ul class="navigation-buttons">
             <a href="#projects" class="jump-link">
@@ -138,10 +141,15 @@
           <h1>Hi! My name is Kareem Saleh...</h1>
           <p>
             I'm currently a
-            <strong>2<sup>nd</sup> year physics student</strong> at the
-            <strong>University of Manchester!</strong> Some of my interests
-            besides studying physics include: coding, studying languages and
-            being a huge anime fan!
+            <b>3<sup>rd</sup> year physics student</b> at the
+            <b>University of Manchester!</b> I began learning to code around 2
+            years ago. Beginning with <b>Python</b> for analysing lab data, I
+            later got interested in front-end web development and learned
+            <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>.
+          </p>
+          <p>
+            My next goals are to dabble into back-end web development and learn
+            more about data science and machine learning!
           </p>
           <div class="svg-links">
             <a href="https://github.com/Kareem-Saleh" target="_blank">
@@ -196,8 +204,8 @@
 
           <div class="project-content">
             <div class="project-info">
-              <a class="blog-href" href="blog/boards.html">
-                <h2>Boards</h2>
+              <a href="./blog/thermal_neutrons.html">
+                <h2>Thermal Neutron Shielding</h2>
                 <svg
                   width="30px"
                   height="30px"
@@ -214,24 +222,23 @@
                 </svg>
               </a>
               <p>
-                Boards is a minimalistic journaling web-app made to make it easy
-                to organise your ideas and thoughts! The main feature is the
-                ability to add "stickys" onto your "board". You can create and
-                save multiple boards which makes it easier to group specific
-                stickys together however you like!
+                Monte Carlo methods consist of generating random numbers in
+                order to simulate situations that would take forever to solve
+                analytically. Here Monte Carlo methods were used to simulate the
+                diffusion of thermal neutrons through a shielding material.
               </p>
               <div class="pills">
-                <div class="pill">Javascript</div>
-                <div class="pill">CSS</div>
-                <div class="pill">HTML</div>
+                <div class="pill">Numpy</div>
+                <div class="pill">Physics</div>
+                <div class="pill">Simulation</div>
               </div>
             </div>
-            <img src="imgs/boards/boards1.webp" />
+            <img src="./imgs/spreading law/spreading law2.webp" />
           </div>
 
           <div class="project-content">
             <div class="project-info">
-              <a href="/blog/spreading law.html">
+              <a href="./blog/spreading law.html">
                 <h2>Spreading Law</h2>
                 <svg
                   width="30px"
@@ -257,18 +264,53 @@
                 best describes this interaction.
               </p>
               <div class="pills">
-                <div class="pill">Python</div>
-                <div class="pill">Physics</div>
-                <div class="pill">Data analysis</div>
+                <div class="pill">Numpy</div>
+                <div class="pill">Statistical analysis</div>
+                <div class="pill">Data manipulation</div>
                 <div class="pill">Data visualisation</div>
               </div>
             </div>
-            <img src="imgs/spreading law/spreading law2.webp" />
+            <img src="./imgs/spreading law/spreading law2.webp" />
           </div>
 
           <div class="project-content">
             <div class="project-info">
-              <a href="404.html">
+              <a class="blog-href" href="./blog/boards.html">
+                <h2>Boards</h2>
+                <svg
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7M17 7H8M17 7V16"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <p>
+                Boards is a minimalistic journaling web-app made to make it easy
+                to organise your ideas and thoughts! The main feature is the
+                ability to add "stickys" onto your "board". You can create and
+                save multiple boards which makes it easier to group specific
+                stickys together however you like!
+              </p>
+              <div class="pills">
+                <div class="pill">DOM manipulation</div>
+                <div class="pill">LocalStorage</div>
+                <div class="pill">UI Design</div>
+              </div>
+            </div>
+            <img src="./imgs/boards/boards1.webp" />
+          </div>
+
+          <!-- <div class="project-content">
+            <div class="project-info">
+              <a href="./404.html">
                 <h2>Radioactive Decay</h2>
                 <svg
                   width="30px"
@@ -297,12 +339,12 @@
                 <div class="pill">Simulation</div>
               </div>
             </div>
-            <img src="imgs/radioactive decay.webp" />
-          </div>
+            <img src="./imgs/radioactive decay.webp" />
+          </div> -->
 
-          <div class="project-content">
+          <!-- <div class="project-content">
             <div class="project-info">
-              <a href="404.html">
+              <a href="./404.html">
                 <h2>Doppler Shift</h2>
                 <svg
                   width="30px"
@@ -332,12 +374,12 @@
                 <div class="pill">Data visualisation</div>
               </div>
             </div>
-            <img src="imgs/doppler shift.webp" />
-          </div>
+            <img src="./imgs/doppler shift.webp" />
+          </div> -->
 
           <div class="project-content">
             <div class="project-info">
-              <a href="blog/portfolio.html">
+              <a href="./blog/portfolio.html">
                 <h2>Portfolio Website</h2>
                 <svg
                   width="30px"
@@ -354,19 +396,56 @@
                   />
                 </svg>
               </a>
-              <p>The website you are on right now!</p>
+              <p>
+                The website you are on right now! This website was built using
+                HTML, CSS and Javascript to create a site which hopefully is
+                pleasant on the eye and works smoothly.
+              </p>
               <div class="pills">
-                <div class="pill">JavaScript</div>
-                <div class="pill">HTML</div>
                 <div class="pill">CSS</div>
                 <div class="pill">Website design</div>
                 <div class="pill">Typography</div>
                 <div class="pill">Creative writing</div>
               </div>
             </div>
-            <img src="imgs/portfolio/portfolio1.webp" />
+            <img src="./imgs/portfolio/portfolio1.webp" />
           </div>
         </div>
+
+        <!-- <div class="project-content">
+          <div class="project-info">
+            <a class="blog-href" href="./blog/boards.html">
+              <h2>Enstars Colour Quiz</h2>
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 17L17 7M17 7H8M17 7V16"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <p>
+              Boards is a minimalistic journaling web-app made to make it easy
+              to organise your ideas and thoughts! The main feature is the
+              ability to add "stickys" onto your "board". You can create and
+              save multiple boards which makes it easier to group specific
+              stickys together however you like!
+            </p>
+            <div class="pills">
+              <div class="pill">Javascript</div>
+              <div class="pill">CSS</div>
+              <div class="pill">HTML</div>
+            </div>
+          </div>
+          <img src="./imgs/enstars/enstars1.webp" />
+        </div> -->
 
         <ul id="skills" class="skills-wrapper">
           <h1>Skills</h1>
@@ -423,7 +502,6 @@
               <li>Data analysis</li>
               <li>Data visualisation</li>
               <li>Simulations</li>
-              <li>Algorithms</li>
               <li>Optimisation</li>
             </ul>
           </li>
@@ -465,8 +543,6 @@
               <li>Responsive design</li>
               <li>Animations</li>
               <li>Transitions</li>
-              <li>Interactivity</li>
-              <li>Accesibility</li>
             </ul>
           </li>
           <li class="skill-section">
@@ -489,10 +565,9 @@
               <h2>Javascript:</h2>
             </div>
             <ul class="skill-pills">
+              <li>DOM manipulation</li>
               <li>APIs</li>
               <li>Debugging</li>
-              <li>React</li>
-              <li>Node.js</li>
               <li>NPM</li>
               <li>Vite</li>
             </ul>
@@ -504,9 +579,19 @@
             <ul class="skill-pills">
               <li>Git</li>
               <li>Github</li>
-              <li>SQL</li>
               <li>Video editing</li>
               <li>Photo editing</li>
+            </ul>
+          </li>
+          <li class="skill-section">
+            <div class="skill-detail">
+              <h2>📝 Learning:</h2>
+            </div>
+            <ul class="skill-pills">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>scikit-learn</li>
             </ul>
           </li>
           <li class="skill-section">
@@ -703,11 +788,11 @@
 
         <section id="about" class="about-container">
           <h1>About Me</h1>
-          <img src="imgs/me glasses.webp" alt="Kareem Saleh" />
+          <img src="./imgs/me glasses.webp" alt="Kareem Saleh" />
           <p>
-            I'm a physics student with a passion for unraveling how things work!
-            Whether it's the laws of the universe or the logic behind a sleek
-            website, <span>I love to think and take on challenges.</span>
+            I'm a physics student that loves unraveling how things work! Whether
+            it's the laws of the universe or the logic behind a sleek website,
+            <span>I love to think and take on challenges.</span>
           </p>
 
           <p>
@@ -716,8 +801,8 @@
               Python for data analysis, automation, solving equations and
               visualising results.</span
             >
-            I also enjoy creating side projects that bridge my interests in
-            science and coding.
+            I also enjoy creating other side projects that follow my other
+            interests, such as <a href="">anime</a>.
           </p>
 
           <p>
@@ -727,13 +812,6 @@
               >HTML, CSS, and JavaScript, blending creativity with
               problem-solving.</span
             >
-          </p>
-
-          <p>
-            <span>What do I aim to do?</span> I want to combine analytical
-            thinking with technical skills to design intuitive digital
-            experiences or maybe just build pretty websites that please the
-            eyes.
           </p>
         </section>
 
