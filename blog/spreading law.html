@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | Boards</title>
+    <title>Spreading Law</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="../imgs/favicon.ico" />
+    <link rel="icon" href="../imgs/favicons/light/favicon.ico" />
     <script src="../scripts/theme_toggle.js" defer></script>
     <script src="../scripts/scrollToSection.js" defer></script>
   </head>
@@ -127,8 +127,8 @@
           <div class="blog-details-section">
             <h3>Link</h3>
             <a
-              href="https://github.com/Kareem-Saleh/PHYS20762-Project-1-Data-Analysis/blob/main/spreading_law.ipynb"
-              >https://github.com/Kareem-Saleh/PHYS20762-Project-1-Data-Analysis/blob/main/spreading_law.ipynb</a
+              href="https://colab.research.google.com/drive/15Dp6GT32UHqeYrh5LPxx2byc5jXf3Sjd?usp=sharing"
+              >Google Colab</a
             >
           </div>
           <div class="blog-details-section blog-skills-container">
@@ -147,54 +147,41 @@
           <p>
             This work was one of my graded projects for the computational
             physics class I enrolled in during my 2nd year. The experimental
-            data comes from an experiment carried out by
+            data is from an experiment carried out by
             <a
               href="https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.2.094002"
               >Kant et al. (2017)</a
-            >. The motivation for this work comes from the deposition of
-            micro-droplets in inkjet printing. As droplets fall onto a piece of
-            paper the drop does not stay as a perfect "blob" and spreads out.
-            The behaviour of this spreading can be fully explained by a set of
-            equations known as the Navier-Stoke Equations, however, doing this
+            >.
+          </p>
+          <p>
+            The motivation for this work comes from the deposition of
+            microdroplets in inkjet printing. As droplets fall onto a piece of
+            paper, they do not stay as a perfect "blob" and spread out. The
+            behaviour of this spreading can be fully explained by a set of
+            equations known as the Navier-Stokes equations; however, doing this
             is extremely complicated. A simpler model is needed! This work
-            analyses the data to figure out which model is better for this
+            analyzes the data to figure out which model is better for this
             scenario. The names of these models are the Cox-Voinov model and the
             de Gennes model.
           </p>
           <h2>What I learned</h2>
           <p>
-            This project marked my first serious jump into computational physics
-            and Jupyter Notebooks, transforming me from a programming novice to
-            someone capable of implementing complex numerical analysis. I
-            initially struggled to handle large amounts of data into NumPy and
-            creating proper visualizations with Matplotlib, but learning how to
-            use Jupyter's interactive environment allowed me to test each step
-            incrementally.
-          </p>
-          <p>
-            The biggest challenges came when implementing numerical solutions
-            for contact angles using SciPy's fsolve and fitting spreading laws.
-            It was here I learned the importance of writing clear, concise code
-            that stopped cryptic error messages.
-          </p>
-          <p>
-            Validating the physical realism of my results was equally critical.
-            While fitting empirical laws such as Cox-Voinov and de Gennes, I
-            questioned whether the derived parameters, like the velocity scale,
-            were physically plausible. Cross-referencing my findings with
-            existing literature helped confirm their validity, reminding me that
-            mathematical models must align with real-world physics. Deciding
-            between competing spreading laws required more than just visual
-            inspection. I relied on statistical tools like χ² analysis and
-            residual plots to determine that the Cox-Voinov law provided a
-            better fit, emphasising the need for quantitative rigor in model
-            selection.
+            Validating the physical realism of my results was the most important
+            aspect of this task. While fitting empirical laws such as Cox-Voinov
+            and de Gennes, it is important to make sure the values you
+            calculate, such as the velocity scale, are physically plausible.
+            Cross-referencing my results with existing literature helped confirm
+            their validity, reminding me that mathematical models must align
+            with real-world physics. In order to decide which model better
+            represented the situation, I relied on statistical tools like χ²
+            analysis and residual plots to determine that the Cox-Voinov law
+            provided a better fit, emphasising the need for quantitative rigor
+            in model selection.
           </p>
           <p>
             Through persistent debugging and leveraging Jupyter's instant
-            feedback, I not only solved the physics problem but developed core
-            programming skills in data handling, visualization, and numerical
-            methods.
+            feedback, I developed my programming skills in data handling,
+            visualisation, and numerical methods.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | Thermal Neutron Sheilding</title>
+    <title>Thermal Neutron Sheilding</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="../imgs/favicon.ico" />
+    <link rel="icon" href="../imgs/favicons/light/favicon.ico" />
     <script src="../scripts/theme_toggle.js" defer></script>
     <script src="../scripts/scrollToSection.js" defer></script>
   </head>
@@ -112,9 +112,8 @@
         <div class="project-left">
           <h1>Thermal Neutron Sheilding</h1>
           <div class="image-gallery">
-            <img src="../imgs/portfolio/portfolio1.webp" />
-            <img src="../imgs/portfolio/portfolio2.webp" />
-            <img src="../imgs/portfolio/portfolio3.webp" />
+            <img src="../imgs/thermal neutrons/neutrons1.webp" />
+            <img src="../imgs/thermal neutrons/neutrons2.webp" />
           </div>
         </div>
       </div>
@@ -126,15 +125,18 @@
           </div>
           <div class="blog-details-section">
             <h3>Link</h3>
-            <a href="https://kareem-saleh.github.io/Portfolio/">
-              https://kareem-saleh.github.io/Portfolio/
+            <a
+              href="https://colab.research.google.com/drive/10QSQw3haGmbEmbbHjTwmZCc5LZOiXPHk?usp=sharing"
+            >
+              Google Colab
             </a>
           </div>
           <div class="blog-details-section blog-skills-container">
             <h3>Skills learnt / improved</h3>
             <div class="blog-skills">
-              <p>Monte Carlo</p>
               <p>Numpy</p>
+              <p>Matplotlib</p>
+              <p>Monte Carlo methods</p>
               <p>Optimisation</p>
             </div>
           </div>
@@ -142,11 +144,53 @@
         <div class="blog-content">
           <p></p>
           <h2>Background</h2>
-          <p></p>
+          <p>
+            This simulation was created for my final project for my
+            computational physics class. Thermal neutrons are slower than
+            typical neutrons, which have higher energies. This means they have a
+            higher chance of being captured when used for nuclear reactions.
+          </p>
+          <p>
+            To have successful chain reactions, it is important that we
+            understand how these absorptions occur. Here we simulate water,
+            graphite, and lead as the shielding materials and calculate the
+            amount of neutrons that are transmitted, absorbed, or reflected,
+            using a process known as a random walk. From finding the amount of
+            each outcome, we can calculate the characteristic attenuation length
+            and its associated errors.
+          </p>
           <h2>Considerations</h2>
-          <p></p>
+          <p>
+            A random walk needs randomly distributed points to simulate the
+            neutrons moving in 3D. However, using a regular uniform distribution
+            creates biases due to spectral issues; to fix this, I used spherical
+            coordinates in order to create unbiased steps.
+          </p>
+          <p>
+            Another consideration I had to think about was how to optimise the
+            random walk. To get statistically accurate results, the walk would
+            have to be repeated many times for every neutron. In this code, I
+            simulated 10000 neutrons, then averaged their results to get means.
+            This process was repeated 10 times to average again for even more
+            accurate results.
+          </p>
+          <p>
+            This leads to 100000 random walks, and this can be incredibly
+            time-consuming for a computer to run! My solution to this problem
+            was to use Numpy and its vectorized functions to easily run and cut
+            down the time taken to compute each simulation.
+          </p>
           <h2>Future Improvements</h2>
-          <p></p>
+          <p>
+            For the future, I would create further optimisations to the code to
+            improve runtime and add more sophisticated methods to simulate other
+            situations.
+          </p>
+          <p>
+            When I submitted the project, there were still a few places where
+            normal Python for loops were used; these are known to be slow, and
+            further use of Numpy would be used here.
+          </p>
         </div>
       </div>
     </div>

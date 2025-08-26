@@ -9,7 +9,7 @@ function enableDarkMode() {
   document.body.classList.add("dark-mode");
   sun.classList.toggle("none");
   moon.classList.toggle("none");
-  favicon.href = "./imgs/favicons/dark/favicon.ico";
+  favicon.href = "../imgs/favicons/dark/favicon.ico";
 
   localStorage.setItem("darkMode", "active");
 }
@@ -18,7 +18,7 @@ function disableDarkMode() {
   document.body.classList.remove("dark-mode");
   sun.classList.toggle("none");
   moon.classList.toggle("none");
-  favicon.href = "./imgs/favicons/light/favicon.ico";
+  favicon.href = "../imgs/favicons/light/favicon.ico";
 
   localStorage.setItem("darkMode", null);
 }
